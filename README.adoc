@@ -6,6 +6,9 @@
 :project_id: gs-client-side-load-balancing
 This guide walks you through the process of providing client-side load balancing for a microservice application using Netflix Ribbon.
 
+IMPORTANT: Spring Cloud Netflix Ribbon is now deprecated. To see a demo of
+the currently recommended client-side-load-balancing approach, please check this https://spring.io/guides/gs/spring-cloud-loadbalancer/[guide].
+
 == What you'll build
 
 You'll build a microservice application that uses Netflix Ribbon and Spring Cloud Netflix to provide client-side load balancing in calls to another microservice.
