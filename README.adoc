@@ -36,14 +36,14 @@ include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/
 
 `say-hello/build.gradle`
 // AsciiDoc source formatting doesn't support groovy, so using java instead
-[source,java]
+[source,java,tabsize=2]
 ----
 include::initial/say-hello/build.gradle[]
 ----
 
 `user/build.gradle`
 // AsciiDoc source formatting doesn't support groovy, so using java instead
-[source,java]
+[source,java,tabsize=2]
 ----
 include::initial/user/build.gradle[]
 ----
@@ -88,7 +88,7 @@ Our &#8220;server&#8221; service is called Say Hello. It will return a random gr
 In `src/main/java/hello`, create the file `SayHelloApplication.java`. It should look like this:
 
 `say-hello/src/main/java/hello/SayHelloApplication.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 include::complete/say-hello/src/main/java/hello/SayHelloApplication.java[]
 ----
@@ -110,7 +110,7 @@ The User application will be what our user sees. It will make a call to the Say 
 In the User application directory, under `src/main/java/hello`, add the file `UserApplication.java`:
 
 `user/src/main/java/hello/UserApplication.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 package hello;
 
@@ -200,7 +200,7 @@ In our case above, the client is named `say-hello`. The properties we set are `e
 In our `UserApplication` class, switch the `RestTemplate` to use the Ribbon client to get the server address for Say Hello:
 
 `user/src/main/java/hello/UserApplication.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 include::complete/user/src/main/java/hello/UserApplication.java[]
 ----
@@ -210,7 +210,7 @@ We've made a couple of other related changes to the `UserApplication` class. Our
 We'll need to create that class. Add a new file, `SayHelloConfiguration.java`, in the `user/src/main/java/hello` directory:
 
 `user/src/main/java/hello/SayHelloConfiguration.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 include::complete/user/src/main/java/hello/SayHelloConfiguration.java[]
 ----

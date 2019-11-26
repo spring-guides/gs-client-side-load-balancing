@@ -20,7 +20,7 @@ public class UserApplication {
   @LoadBalanced
   @Bean
   RestTemplate restTemplate(){
-    return new RestTemplate();
+	return new RestTemplate();
   }
 
   @Autowired
@@ -28,12 +28,12 @@ public class UserApplication {
 
   @RequestMapping("/hi")
   public String hi(@RequestParam(value="name", defaultValue="Artaban") String name) {
-    String greeting = this.restTemplate.getForObject("http://say-hello/greeting", String.class);
-    return String.format("%s, %s!", greeting, name);
+	String greeting = this.restTemplate.getForObject("http://say-hello/greeting", String.class);
+	return String.format("%s, %s!", greeting, name);
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(UserApplication.class, args);
+	SpringApplication.run(UserApplication.class, args);
   }
 }
 

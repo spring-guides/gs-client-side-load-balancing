@@ -16,12 +16,12 @@ public class SayHelloConfiguration {
 
   @Bean
   public IPing ribbonPing(IClientConfig config) {
-    return new PingUrl();
+	return new PingUrl();
   }
 
   @Bean
   public IRule ribbonRule(IClientConfig config) {
-    return new AvailabilityFilteringRule();
+	return new AvailabilityFilteringRule();
   }
 
 }
