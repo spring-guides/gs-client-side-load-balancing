@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.2.1.RELEASE'
+		springBootVersion = '2.3.7.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -19,8 +19,8 @@ bootJar {
 	baseName = 'say-hello'
 	version = '0.0.1-SNAPSHOT'
 }
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
 	mavenCentral()
